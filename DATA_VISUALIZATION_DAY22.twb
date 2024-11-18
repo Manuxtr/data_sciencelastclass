@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='user_behavior_dataset' inline='true' name='federated.18m1a8s0bj8sgw1duz7300ncwqfi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='user_behavior_dataset' name='textscan.11izd7i0n1z07215zvtdr1x3sdl9'>
+            <connection class='textscan' directory='C:/Users/USER/Documents/EARLYCODE/data_science_data_analysis' filename='user_behavior_dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.11izd7i0n1z07215zvtdr1x3sdl9' name='user_behavior_dataset.csv' table='[user_behavior_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='User ID' ordinal='0' />
+            <column datatype='string' name='Device Model' ordinal='1' />
+            <column datatype='string' name='Operating System' ordinal='2' />
+            <column datatype='integer' name='App Usage Time (min/day)' ordinal='3' />
+            <column datatype='real' name='Screen On Time (hours/day)' ordinal='4' />
+            <column datatype='integer' name='Battery Drain (mAh/day)' ordinal='5' />
+            <column datatype='integer' name='Number of Apps Installed' ordinal='6' />
+            <column datatype='integer' name='Data Usage (MB/day)' ordinal='7' />
+            <column datatype='integer' name='Age' ordinal='8' />
+            <column datatype='string' name='Gender' ordinal='9' />
+            <column datatype='integer' name='User Behavior Class' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[User ID]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>User ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Device Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Device Model]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>Device Model</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating System</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Operating System]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>Operating System</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>App Usage Time (min/day)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[App Usage Time (min/day)]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>App Usage Time (min/day)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Screen On Time (hours/day)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Screen On Time (hours/day)]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>Screen On Time (hours/day)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Battery Drain (mAh/day)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Battery Drain (mAh/day)]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>Battery Drain (mAh/day)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Apps Installed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Apps Installed]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>Number of Apps Installed</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data Usage (MB/day)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Data Usage (MB/day)]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>Data Usage (MB/day)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User Behavior Class</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[User Behavior Class]</local-name>
+            <parent-name>[user_behavior_dataset.csv]</parent-name>
+            <remote-alias>User Behavior Class</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Battery_to_data_ratio' datatype='real' name='[Calculation_537054260921139200]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Battery Drain (mAh/day)] / [Data Usage (MB/day)]' />
+      </column>
+      <column caption='Agegroups' datatype='string' name='[Calculation_537054260922523649]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Age]&gt;=18 and [Age]&lt;=25 THEN &quot;18- 25&quot; &#13;&#10;ELSEIF  [Age]&gt;= 26 and [Age]&gt;=35 THEN &quot;26-35&quot;&#13;&#10;ELSEIF  [Age]&gt;= 36 and [Age]&gt;=45 THEN &quot;36-45&quot;&#13;&#10;ELSE &quot;46 above&quot; END' />
+      </column>
+      <column caption='APP_USAGE_PER_INSTALLED_APP' datatype='real' name='[Calculation_537054260924973058]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[App Usage Time (min/day)]/[Number of Apps Installed]' />
+      </column>
+      <column caption='SCREEN_ON_TIME_PER_APP' datatype='real' name='[Calculation_537054260926042115]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Screen On Time (hours/day)]/[Number of Apps Installed]' />
+      </column>
+      <column caption='BATTERY_DRAINED_PER_APP_INSTALLED' datatype='real' name='[Calculation_537054260926328836]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Battery Drain (mAh/day)]/[Number of Apps Installed]' />
+      </column>
+      <column caption='APP_USAGE_SCREEN_ON_TIME_RATIO' datatype='real' name='[Calculation_537054260926689285]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[App Usage Time (min/day)]/[Screen On Time (hours/day)]' />
+      </column>
+      <column caption='PERCENTAGE_DAILY_BATTRY_DRAINED_APP_USAGE' datatype='real' name='[Calculation_537054260927016966]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[App Usage Time (min/day)]/[Battery Drain (mAh/day)]*100' />
+      </column>
+      <column caption='MEDIAN_THRESHOLD_data_usage' datatype='real' name='[Calculation_537054260928163847]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MEDIAN([Data Usage (MB/day)])' />
+      </column>
+      <column caption='AVERAGE_APP_USAGE_PER_CLASS' datatype='real' name='[Calculation_537054260938194955]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED[User Behavior Class]:AVG([App Usage Time (min/day)])}' />
+      </column>
+      <column caption='TOTAL_BATERY_DRAINED' datatype='integer' name='[Calculation_537054260939939852]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Battery Drain (mAh/day)])' />
+      </column>
+      <column caption='APP_USAGE_ABOVE_40' datatype='integer' name='[Calculation_537054260940419085]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Age]&gt;40:SUM([App Usage Time (min/day)])}' />
+      </column>
+      <column caption='AVERAGE_DATA_USAGE_PER_GENDER' datatype='real' name='[Calculation_537054260941291534]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Gender]:AVG([Data Usage (MB/day)])}' />
+      </column>
+      <column caption='data_usage_category' datatype='string' name='[Calculation_537054260941930511]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Data Usage (MB/day)]&gt;=824 then &quot;heavy&quot;&#13;&#10;ELSE &quot;Light&quot; END' />
+      </column>
+      <column caption='screen_on_time_to_battery_drain_ratio' datatype='real' name='[Calculation_537054260945928209]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Device Model]:SUM([Screen On Time (hours/day)])/SUM([Battery Drain (mAh/day)])}' />
+      </column>
+      <column caption='total_app_usage' datatype='real' name='[Calculation_537054260947349522]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Operating System]==&quot;Andriod&quot;:SUM([App Usage Time (min/day)]) }&#13;&#10;/{ FIXED [Operating System]==&quot;iOS&quot;:SUM([App Usage Time (min/day)]) }' />
+      </column>
+      <column caption='APP_INSTALLED_RANK' datatype='integer' name='[Calculation_537054260951306259]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_UNIQUE(SUM([Number of Apps Installed]),&apos;desc&apos;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='TOP_USER_APPS' datatype='integer' name='[Calculation_537054260951560212]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_537054260951306259]&lt;=10 THEN SUM([Data Usage (MB/day)]) ELSE 0 END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='integer' name='[User ID]' role='dimension' type='ordinal' />
+      <column caption='user_behavior_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='user_behavior_dataset.csv' id='user_behavior_dataset.csv_FCB076EA5DD14080B8C60D20E5A7BEAE'>
+            <properties context=''>
+              <relation connection='textscan.11izd7i0n1z07215zvtdr1x3sdl9' name='user_behavior_dataset.csv' table='[user_behavior_dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='User ID' ordinal='0' />
+                  <column datatype='string' name='Device Model' ordinal='1' />
+                  <column datatype='string' name='Operating System' ordinal='2' />
+                  <column datatype='integer' name='App Usage Time (min/day)' ordinal='3' />
+                  <column datatype='real' name='Screen On Time (hours/day)' ordinal='4' />
+                  <column datatype='integer' name='Battery Drain (mAh/day)' ordinal='5' />
+                  <column datatype='integer' name='Number of Apps Installed' ordinal='6' />
+                  <column datatype='integer' name='Data Usage (MB/day)' ordinal='7' />
+                  <column datatype='integer' name='Age' ordinal='8' />
+                  <column datatype='string' name='Gender' ordinal='9' />
+                  <column datatype='integer' name='User Behavior Class' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_behavior_dataset' name='federated.18m1a8s0bj8sgw1duz7300ncwqfi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18m1a8s0bj8sgw1duz7300ncwqfi'>
+            <column datatype='integer' name='[App Usage Time (min/day)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Battery Drain (mAh/day)]' role='measure' type='quantitative' />
+            <column caption='SCREEN_ON_TIME_PER_APP' datatype='real' name='[Calculation_537054260926042115]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Screen On Time (hours/day)]/[Number of Apps Installed]' />
+            </column>
+            <column caption='BATTERY_DRAINED_PER_APP_INSTALLED' datatype='real' name='[Calculation_537054260926328836]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Battery Drain (mAh/day)]/[Number of Apps Installed]' />
+            </column>
+            <column caption='APP_USAGE_SCREEN_ON_TIME_RATIO' datatype='real' name='[Calculation_537054260926689285]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[App Usage Time (min/day)]/[Screen On Time (hours/day)]' />
+            </column>
+            <column caption='PERCENTAGE_DAILY_BATTRY_DRAINED_APP_USAGE' datatype='real' name='[Calculation_537054260927016966]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[App Usage Time (min/day)]/[Battery Drain (mAh/day)]*100' />
+            </column>
+            <column caption='MEDIAN_THRESHOLD_data_usage' datatype='real' name='[Calculation_537054260928163847]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MEDIAN([Data Usage (MB/day)])' />
+            </column>
+            <column datatype='integer' name='[Data Usage (MB/day)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Apps Installed]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Screen On Time (hours/day)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_537054260926042115]' derivation='Sum' name='[sum:Calculation_537054260926042115:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_537054260926328836]' derivation='Sum' name='[sum:Calculation_537054260926328836:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_537054260926689285]' derivation='Sum' name='[sum:Calculation_537054260926689285:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_537054260927016966]' derivation='Sum' name='[sum:Calculation_537054260927016966:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Screen On Time (hours/day)]' derivation='Sum' name='[sum:Screen On Time (hours/day):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_537054260928163847]' derivation='User' name='[usr:Calculation_537054260928163847:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18m1a8s0bj8sgw1duz7300ncwqfi].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18m1a8s0bj8sgw1duz7300ncwqfi].[sum:Calculation_537054260926689285:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18m1a8s0bj8sgw1duz7300ncwqfi].[sum:Calculation_537054260926328836:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18m1a8s0bj8sgw1duz7300ncwqfi].[usr:Calculation_537054260928163847:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18m1a8s0bj8sgw1duz7300ncwqfi].[sum:Calculation_537054260927016966:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18m1a8s0bj8sgw1duz7300ncwqfi].[sum:Calculation_537054260926042115:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18m1a8s0bj8sgw1duz7300ncwqfi].[sum:Screen On Time (hours/day):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.18m1a8s0bj8sgw1duz7300ncwqfi].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{27476F64-5F5A-4A4E-9C31-686690AAD8BA}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7554D35D-45BD-4C7D-B4C7-B2EFEBCBF30B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      NAUgpv0H6UyCaI2jL+UAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
