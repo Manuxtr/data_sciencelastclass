@@ -1,0 +1,30 @@
+POWER BI
+1.TO EXTRACT YEAR FROM DATE
+=Date.year([column name])
+
+flag_low_sales = IF([TOTAL_PRICE_PER_SALES]<500,TRUE(),FALSE())
+
+columns creation
+day 20
+user behaviour dataset!
+1.create a column for battery to data ratio that shows battery drian per megabyte of data used
+battery drained/data usage
+2.create a column to catgries user into age groups
+switch statement:used like an if /else
+3.create a column that calcuklate app usage per installed time
+4create a column to cal screen on time b app installed
+5.create a column to label users as light or heavy data user based on data consumption(threshold can be the median)
+6.creae a column to call battery drain per app installed
+7.create a colunm to cal the app usage ons screentime
+8.creqate a column to cal the percentage of battery drained per app isntalled
+9.
+
+Measures:
+1.cal the average app usage per user behavour class
+2.cal the total battery across all users
+3.cal a measure for all total app usage per gender
+4.CREATE  A MEASURE FOR AVERAGE DATA USAGE PER GENDER
+5.cal the stcreen on time, to battery drain ration for devices model
+6.create a measure for total app usage for andriod user vs ios users
+7.CREATE A MEASURE THAT SUMS UP
+html-color.codes
